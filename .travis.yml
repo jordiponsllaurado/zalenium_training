@@ -8,6 +8,7 @@ services:
 before_install:
   - docker info
   - docker-compose version
+  - docker pull elgalu/selenium
 
 script:
   - docker-compose -f docker-compose.yml up --abort-on-container-exit --build
