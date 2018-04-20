@@ -23,7 +23,7 @@ services:
   ruby_test:
     image: ruby_test:latest
     build:
-      context: ../grid
+      context: ./grid
       dockerfile: ./Dockerfile
     depends_on:
       - hub
